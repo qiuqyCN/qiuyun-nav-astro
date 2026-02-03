@@ -1,0 +1,45 @@
+---
+import { siteConfig } from '@/configs/site-config';
+import ThemeIcon from './ThemeIcon.vue';
+import SearchBar from './SearchBar.vue';
+
+interface Props {
+  currentPath?: string;
+}
+
+const { currentPath = '/' } = Astro.props;
+
+const navItems = [
+  { name: '首页', path: '/' },
+  { name: '关于', path: '/about' }
+];
+---
+
+<nav class="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+  <div class="max-w-7xl mx-auto px-6 md:px-8 h-16 flex items-center justify-between">
+    <div class="flex items-center gap-8">
+      <a href="/" class="flex items-center gap-2.5 text-xl font-bold hover:opacity-80 transition-opacity">
+        <img src={siteConfig.logo} alt={siteConfig.name} class="w-9 h-9" />
+        <span>{siteConfig.name}</span>
+      </a>
+      <div class="hidden md:flex items-center gap-1">
+        {navItems.map((item) => (
+          <a
+            href={item.path}
+            class={`relative px-4 py-2 text-sm font-medium transition-all duration-200 rounded-lg hover:bg-accent hover:text-accent-foreground ${
+              currentPath === item.path
+                ? 'text-foreground'
+                : 'text-muted-foreground'
+            }`}
+          >
+            {item.name}
+          </a>
+        ))}
+      </div>
+    </div>
+    <div class="flex items-center gap-3">
+      <SearchBar client:load />
+      <ThemeIcon client:load />
+    </div>
+  </div>
+</nav>

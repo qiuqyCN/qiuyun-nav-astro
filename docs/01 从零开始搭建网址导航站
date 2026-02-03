@@ -1,0 +1,52 @@
+## 从零开始搭建网址导航站
+
+### 技术栈要求
+- 核心框架：Astro
+- UI组件库：shadcn-vue
+- 样式解决方案：TailwindCSS
+- 编程语言：TypeScript
+
+### 创建项目
+
+1. 创建 Astro 项目
+`npx create-astro@latest qiuyun-nav-astro  --template with-tailwindcss --install --add vue --git`
+
+2. 安装 shadcn-vue, 并添加按钮组件
+```
+npm install @shadcn-vue/ui
+npx shadcn-vue@latest add button
+```
+
+3. 配置 shadcn-vue
+在 `tsconfig.json` 中添加以下配置：
+```typescript
+{
+  "compilerOptions": {
+    // ...
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
+    // ...
+  }
+}
+```
+4. 安装 lucide-vue-next
+`npm install lucide-vue-next`
+
+
+5. 安装 @tailwindcss/typography
+`npm install -D @tailwindcss/typography`
+
+6. 配置 @tailwindcss/typography
+在 `tailwind.config.js` 中添加以下配置：
+```javascript
+module.exports = {
+  // ...
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
+}
+```

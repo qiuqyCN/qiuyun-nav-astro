@@ -1,0 +1,45 @@
+---
+import "../styles/global.css";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.vue";
+import { siteConfig } from "@/configs/site-config";
+
+interface Props {
+  title?: string;
+  description?: string;
+  keywords?: string;
+  currentPath?: string;
+}
+
+const {
+  title = siteConfig.name,
+  description = siteConfig.description,
+  keywords = siteConfig.keywords,
+  currentPath,
+} = Astro.props;
+
+const finalCurrentPath = currentPath || Astro.url.pathname;
+---
+
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href={siteConfig.logo} />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <title>{title}</title>
+  </head>
+
+  <body class="min-h-screen bg-background text-foreground">
+    <Navbar currentPath={finalCurrentPath} />
+
+    <main class="pt-24 pb-8 max-w-7xl mx-auto px-6 md:px-8">
+      <article class="markdown-body">
+        <slot />
+      </article>
+    </main>
+    <Footer client:load />
+  </body>
+</html>

@@ -26,7 +26,8 @@ export const categories: Category[] = [
       {
         name: 'Vue.js 官方文档',
         description: '渐进式JavaScript框架',
-        url: 'https://vuejs.org'
+        url: 'https://vuejs.org',
+        logo: 'https://vuejs.org/logo.svg'
       },
       {
         name: 'React 官方文档',
@@ -42,6 +43,22 @@ export const categories: Category[] = [
         name: 'TailwindCSS',
         description: '实用优先的CSS框架',
         url: 'https://tailwindcss.com'
+      },
+      {
+        name: 'Nuxt',
+        description: '基于 Vue.js 的通用应用框架',
+        url: 'https://nuxt.com'
+      },
+      {
+        name: 'Astro',
+        description: '现代化的静态网站生成器',
+        url: 'https://astro.build',
+        logo: 'https://astro.build/favicon.svg'
+      },
+      {
+        name: 'shadcn-vue',
+        description: '基于 Radix Vue 的组件库',
+        url: 'https://www.shadcn-vue.com'
       }
     ]
   },
@@ -69,6 +86,28 @@ export const categories: Category[] = [
         name: 'Go 官方文档',
         description: '简单高效的编程语言',
         url: 'https://golang.org'
+      },
+      {
+        name: 'Spring Boot',
+        description: '基于 Spring 框架的快速开发工具',
+        url: 'https://spring.io/projects/spring-boot',
+        logo: 'https://spring.io/favicon.svg'
+      },
+      {
+        name: 'MyBatis-Plus',
+        description: 'MyBatis 的增强工具',
+        url: 'https://baomidou.com',
+        logo: 'https://baomidou.com/favicon.svg'
+      },
+      {
+        name: 'PostgreSQL',
+        description: '强大的开源对象关系数据库',
+        url: 'https://www.postgresql.org'
+      },
+      {
+        name: 'Hutool',
+        description: 'Java 工具类库',
+        url: 'https://hutool.cn'
       }
     ]
   },
@@ -80,7 +119,8 @@ export const categories: Category[] = [
       {
         name: 'Figma',
         description: '协作式界面设计工具',
-        url: 'https://www.figma.com'
+        url: 'https://www.figma.com',
+        logo: 'https://static.figma.com/app/icon/2/icon-128.png'
       },
       {
         name: 'Sketch',
@@ -90,12 +130,8 @@ export const categories: Category[] = [
       {
         name: 'Dribbble',
         description: '设计师灵感分享社区',
-        url: 'https://dribbble.com'
-      },
-      {
-        name: 'Behance',
-        description: 'Adobe旗下的设计师作品展示平台',
-        url: 'https://www.behance.net'
+        url: 'https://dribbble.com',
+        logo: 'https://cdn.dribbble.com/assets/favicon-99944ff731bb44d3a947810ca8728f177f8deac035a3a4342120c385fd7acb9d.svg'
       }
     ]
   },
@@ -124,6 +160,11 @@ export const categories: Category[] = [
         name: 'Stack Overflow',
         description: '程序员问答社区',
         url: 'https://stackoverflow.com'
+      },
+      {
+        name: 'JetBrains',
+        description: '专业的开发工具提供商',
+        url: 'https://www.jetbrains.com'
       }
     ]
   },
@@ -135,7 +176,8 @@ export const categories: Category[] = [
       {
         name: 'freeCodeCamp',
         description: '免费的编程学习平台',
-        url: 'https://www.freecodecamp.org'
+        url: 'https://www.freecodecamp.org',
+        logo: 'https://www.freecodecamp.org/favicon-32x32.png'
       },
       {
         name: 'Coursera',
@@ -145,7 +187,8 @@ export const categories: Category[] = [
       {
         name: 'Udemy',
         description: '在线学习平台',
-        url: 'https://www.udemy.com'
+        url: 'https://www.udemy.com',
+        logo: 'https://frontends.udemycdn.com/frontends-homepage/staticx/udemy/images/v8/favicon-32x32.png'
       }
     ]
   },
@@ -180,6 +223,34 @@ export const categories: Category[] = [
         name: 'Hugging Face',
         description: 'AI模型和数据集平台',
         url: 'https://huggingface.co'
+      },
+      {
+        name: 'Ollama',
+        description: '本地运行大语言模型',
+        url: 'https://ollama.com',
+        logo: 'https://ollama.com/public/icon-16x16.png'
+      },
+      {
+        name: '百炼',
+        description: '阿里云大模型平台',
+        url: 'https://bailian.console.aliyun.com',
+        logo: 'https://img.alicdn.com/tfs/TB1_ZXuNcfpK1RjSZFOXXa6nFXa-32-32.ico'
+      },
+      {
+        name: 'Kimi',
+        description: 'Moonshot AI 智能助手',
+        url: 'https://kimi.moonshot.cn'
+      },
+      {
+        name: 'DeepSeek',
+        description: '深度求索人工智能',
+        url: 'https://www.deepseek.com'
+      },
+      {
+        name: '千问',
+        description: '通义千问大模型',
+        url: 'https://tongyi.aliyun.com',
+        logo: 'https://img.alicdn.com/imgextra/i4/O1CN01Qd3F9s1ilWmLJo56P_!!6000000004453-55-tps-51-51.svg'
       }
     ]
   },
@@ -197,6 +268,17 @@ export const categories: Category[] = [
         name: 'Microsoft Azure',
         description: '微软云服务平台',
         url: 'https://azure.microsoft.com'
+      },
+      {
+        name: '阿里云',
+        description: '阿里巴巴云计算平台',
+        url: 'https://www.aliyun.com',
+        logo: 'https://img.alicdn.com/tfs/TB1_ZXuNcfpK1RjSZFOXXa6nFXa-32-32.ico'
+      },
+      {
+        name: '腾讯云',
+        description: '腾讯云计算平台',
+        url: 'https://cloud.tencent.com'
       }
     ]
   },
@@ -208,7 +290,8 @@ export const categories: Category[] = [
       {
         name: 'OWASP',
         description: '开放式Web应用程序安全项目',
-        url: 'https://owasp.org'
+        url: 'https://owasp.org',
+        logo: 'https://owasp.org/www--site-theme/favicon.ico'
       }
     ]
   },
@@ -238,7 +321,8 @@ export const categories: Category[] = [
       {
         name: 'Notion',
         description: '一体化工作空间',
-        url: 'https://www.notion.so'
+        url: 'https://www.notion.so',
+        logo: 'https://www.notion.com/front-static/favicon.ico'
       }
     ]
   }

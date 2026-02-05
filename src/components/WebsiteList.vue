@@ -14,12 +14,7 @@ const filteredWebsites = computed(() => {
 });
 
 const defaultLogo = '/default-logo.svg';
-
-const imageErrors = ref<Set<number>>(new Set());
-
-const handleImageError = (index: number) => {
-  imageErrors.value.add(index);
-};
+const imageStates = ref<Record<string, 'loading' | 'loaded' | 'error'>>({});
 
 const getFaviconUrl = (url: string) => {
   try {
@@ -30,14 +25,8 @@ const getFaviconUrl = (url: string) => {
   }
 };
 
-const getImageUrl = (website: Website, index: number) => {
-  if (imageErrors.value.has(index)) {
-    return defaultLogo;
-  }
-  if (website.logo) {
-    return website.logo;
-  }
-  return getFaviconUrl(website.url);
+const getImageUrl = (website: Website) => {
+  return website.logo || getFaviconUrl(website.url);
 };
 </script>
 
@@ -51,20 +40,35 @@ const getImageUrl = (website: Website, index: number) => {
 
     <div v-else class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
       <a
-        v-for="(website, index) in filteredWebsites"
-        :key="index"
+        v-for="website in filteredWebsites"
+        :key="website.url"
         :href="website.url"
         target="_blank"
         rel="noopener noreferrer"
         class="group flex items-start gap-4 bg-card border border-border rounded-xl p-4 hover:shadow-lg hover:border-primary/40 transition-all duration-300 hover:-translate-y-1"
       >
-        <div class="shrink-0">
+        <div class="shrink-0 w-14 h-14 rounded-lg bg-linear-to-br from-primary/20 to-primary/5 relative overflow-hidden">
+          <div
+            v-if="imageStates[website.url] === 'loading'"
+            class="absolute inset-0 animate-pulse bg-muted"
+          />
           <img
-            :src="getImageUrl(website, index)"
+            v-if="imageStates[website.url] !== 'error'"
+            :src="getImageUrl(website)"
             :alt="website.name"
             loading="lazy"
-            @error="handleImageError(index)"
-            class="w-14 h-14 rounded-lg bg-linear-to-br from-primary/20 to-primary/5 object-contain group-hover:scale-110 transition-transform duration-300"
+            @load="imageStates[website.url] = 'loaded'"
+            @error="imageStates[website.url] = 'error'"
+            :class="[
+              'w-full h-full object-contain group-hover:scale-110 transition-all duration-300',
+              imageStates[website.url] ? 'opacity-100' : 'opacity-0'
+            ]"
+          />
+          <img
+            v-if="imageStates[website.url] === 'error'"
+            :src="defaultLogo"
+            :alt="website.name"
+            class="w-full h-full object-contain group-hover:scale-110 transition-all duration-300 opacity-100"
           />
         </div>
         <div class="flex-1 min-w-0">
@@ -84,8 +88,11 @@ const getImageUrl = (website: Website, index: number) => {
 <style scoped>
 .line-clamp-2 {
   display: -webkit-box;
+  display: box;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
+  box-orient: vertical;
   overflow: hidden;
 }
 </style>

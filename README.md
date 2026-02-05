@@ -1,13 +1,33 @@
-# Astro with Tailwind
+秋云导航是一个高质量的网址导航网站，旨在为开发者和设计师提供便捷的资源访问渠道。我们精心整理了各类优质网站，帮助您快速找到所需资源。
 
-```sh
-npm create astro@latest -- --template with-tailwindcss
-```
+无论您是前端开发者、后端工程师、UI设计师，还是技术爱好者，这里都有适合您的资源。
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/with-tailwindcss)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/with-tailwindcss)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/with-tailwindcss/devcontainer.json)
+## 技术栈
 
-Astro comes with [Tailwind](https://tailwindcss.com) support out of the box. This example showcases how to style your Astro project with Tailwind.
+本网站使用以下技术构建：
 
-For complete setup instructions, please see our [Tailwind Styling Guide](https://docs.astro.build/en/guides/styling/#tailwind).
+- [**Astro**](https://astro.build/) - 现代化的静态网站生成器
+- [**Vue.js**](https://vuejs.org/) - 渐进式 JavaScript 框架
+- [**TypeScript**](https://www.typescriptlang.org/) - JavaScript 的超集，添加了类型系统
+- [**TailwindCSS**](https://tailwindcss.com/) - 实用优先的 CSS 框架
+- [**shadcn-vue**](https://www.shadcn-vue.com/) - 高质量的 Vue 组件库
+
+## 作者信息
+
+- **作者**: 秋云
+- **邮箱**: 97208294@qq.com
+- **个人网站**: https://qiuyun.dev
+- **微信**(注明来意): <img src="public/wechat-qrcode.jpg" alt="扫码加我为好友" style="width: 200px; height: auto;">
+
+
+## 联系方式
+
+如果您有任何问题或建议，欢迎通过以下方式联系我们：
+
+- 📧 **邮箱**: [97208294@qq.com](mailto:97208294@qq.com)
+- 🐙 **Github**: [访问主页](https://github.com/qiuqyCN)
+- 📱 **抖音**: [关注我们](https://www.douyin.com/user/MS4wLjABAAAAIAxnsIEUN50zHdMUA45a45k6n6TZyokegJv3dcM66SQ)
+- 📺 **B站**: [关注我们](https://space.bilibili.com/4295116)
+- 📕 **小红书**: [关注我们](https://www.xiaohongshu.com/user/profile/5d115f50000000001202dd8f)
+
+

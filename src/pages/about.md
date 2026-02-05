@@ -11,14 +11,22 @@ currentPath: /about
 
 无论您是前端开发者、后端工程师、UI设计师，还是技术爱好者，这里都有适合您的资源。
 
+## 技术栈
+
+本网站使用以下技术构建：
+
+- [**Astro**](https://astro.build/) - 现代化的静态网站生成器
+- [**Vue.js**](https://vuejs.org/) - 渐进式 JavaScript 框架
+- [**TypeScript**](https://www.typescriptlang.org/) - JavaScript 的超集，添加了类型系统
+- [**TailwindCSS**](https://tailwindcss.com/) - 实用优先的 CSS 框架
+- [**shadcn-vue**](https://www.shadcn-vue.com/) - 高质量的 Vue 组件库
+
 ## 作者信息
 
 - **作者**: 秋云
 - **邮箱**: 97208294@qq.com
 - **个人网站**: https://qiuyun.dev
 - **微信**(注明来意): <img src="/wechat-qrcode.jpg" alt="扫码加我为好友" style="width: 200px; height: auto;">
-
-
 
 
 ## 联系方式
@@ -31,14 +39,6 @@ currentPath: /about
 - 📺 **B站**: [关注我们](https://space.bilibili.com/4295116)
 - 📕 **小红书**: [关注我们](https://www.xiaohongshu.com/user/profile/5d115f50000000001202dd8f)
 
-## 技术栈
 
-本网站使用以下技术构建：
 
-- **Astro** - 现代化的静态网站生成器
-- **Vue.js** - 渐进式 JavaScript 框架
-- **TypeScript** - JavaScript 的超集，添加了类型系统
-- **TailwindCSS** - 实用优先的 CSS 框架
-- **shadcn-vue** - 高质量的 Vue 组件库
 
-## 

@@ -29,5 +29,6 @@
 - 📱 **抖音**: [关注我们](https://www.douyin.com/user/MS4wLjABAAAAIAxnsIEUN50zHdMUA45a45k6n6TZyokegJv3dcM66SQ)
 - 📺 **B站**: [关注我们](https://space.bilibili.com/4295116)
 - 📕 **小红书**: [关注我们](https://www.xiaohongshu.com/user/profile/5d115f50000000001202dd8f)
+- 📘 **掘金**: [访问主页](https://qiuyun.dev)
 
 

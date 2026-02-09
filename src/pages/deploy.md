@@ -21,7 +21,7 @@ currentPath: /deploy
 ### 1. 登录 Netlify
 
 访问 [Netlify 官网](https://www.netlify.com/) 并登录你的账号。选择 Sign in with GitHub 登录。
-![登录 Netlify](/public/deploy/01.png)
+![登录 Netlify](https://nav.qiuyun.dev/deploy/01.png)
 
 ### 2. 导入项目
 
@@ -30,7 +30,7 @@ currentPath: /deploy
 3. 授权 Netlify 访问你的仓库
 4. 在仓库列表中找到并选择 **qiuyun-nav-astro** 项目
 
-![导入项目](/public/deploy/02.png)
+![导入项目](https://nav.qiuyun.dev/deploy/02.png)
 ### 3. 配置构建设置
 
 在部署配置页面，填写以下信息：
@@ -42,7 +42,7 @@ currentPath: /deploy
 
 其他设置保持默认即可。
 
-![配置构建设置](/public/deploy/03.png)
+![配置构建设置](https://nav.qiuyun.dev/deploy/03.png)
 
 ### 4. 部署网站
 
@@ -56,7 +56,9 @@ currentPath: /deploy
 
 1. 进入站点设置 → **Domain management**
 2. 点击 **"Add custom domain"**
-3. 输入你的域名并按照提示配置 DNS 记录
+3. 输入你的域名并按照提示配置 DNS 记录。
+4. 阿里云的 DNS 配置可以参考 ![](https://nav.qiuyun.dev/deploy/06.png)。
+5. cloudflare 的 DNS 配置可以参考 ![](https://nav.qiuyun.dev/deploy/05.png)。
 
 ## 自动部署
 

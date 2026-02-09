@@ -9,11 +9,19 @@ currentPath: /deploy
 
 本教程将指导你如何将秋云导航项目部署到 Netlify，这是一个免费的静态网站托管平台。
 
+部署后的网站预览：
+1. Netlify 默认分配的域名：[qiuyun-nav-astro.netlify.app](https://qiuyun-nav-astro.netlify.app/)
+2. 自定义域名：https://nav.qiuyun.dev/
+
+预览效果：
+![预览效果](https://nav.qiuyun.dev/deploy/00_1.png)
+![预览效果](https://nav.qiuyun.dev/deploy/00_2.png)
+
 ## 准备工作
 
 在开始部署之前，请确保：
 
-1. 项目代码已推送到 GitHub/GitLab/Bitbucket 仓库
+1. fork [秋云导航](https://github.com/qiuqyCN/qiuyun-nav-astro)
 2. 拥有 Netlify 账号（可以使用 GitHub 账号直接登录）
 
 ## 部署步骤
@@ -57,20 +65,18 @@ currentPath: /deploy
 1. 进入站点设置 → **Domain management**
 2. 点击 **"Add custom domain"**
 3. 输入你的域名并按照提示配置 DNS 记录。
-4. 阿里云的 DNS 配置可以参考 ![](https://nav.qiuyun.dev/deploy/06.png)。
-5. cloudflare 的 DNS 配置可以参考 ![](https://nav.qiuyun.dev/deploy/05.png)。
+4. 阿里云域名的 DNS 配置可以参考 ![](https://nav.qiuyun.dev/deploy/06.png)。
+5. cloudflare 域名的 DNS 配置可以参考 ![](https://nav.qiuyun.dev/deploy/05.png)。
 
 ## 自动部署
 
 Netlify 会自动监听你的 Git 仓库变化。每次推送到主分支时，Netlify 都会自动重新构建和部署网站。
 
-## 环境变量（可选）
+## 配置网站、导航分类和网址
 
-如果项目需要环境变量，可以在 Netlify 控制台中设置：
+1. 网站配置，参考代码：https://github.com/qiuqyCN/qiuyun-nav-astro/blob/main/src/configs/site-config.ts
+3. 导航分类和网址，参考代码：https://github.com/qiuqyCN/qiuyun-nav-astro/blob/main/src/configs/websites.ts
 
-1. 进入站点设置 → **Environment variables**
-2. 点击 **"Add a variable"**
-3. 添加所需的变量名和值
 
 ## 更新网站
 
@@ -90,9 +96,7 @@ git push origin main
 
 ## 更多资源
 
-- [Netlify 官方文档](https://docs.netlify.com/)
-- [Astro 部署指南](https://docs.astro.build/en/guides/deploy/)
-- [Tailwind CSS 文档](https://tailwindcss.com/docs)
+- [秋云导航](https://nav.qiuyun.dev/)
 
 ---
 

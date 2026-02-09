@@ -1,3 +1,7 @@
+/**
+ * 网站信息接口
+ * 定义单个网站的基本信息
+ */
 export interface Website {
   name: string;
   description: string;
@@ -5,6 +9,10 @@ export interface Website {
   logo?: string;
 }
 
+/**
+ * 分类信息接口
+ * 定义网站分类的基本信息
+ */
 export interface Category {
   icon: string;
   name: string;
@@ -12,6 +20,10 @@ export interface Category {
   websites?: Website[];
 }
 
+/**
+ * 网站分类配置
+ * 包含前端开发、后端开发、UI/UX设计、移动开发、开发工具、学习资源、游戏开发、人工智能、云服务、安全、数据分析、多媒体、效率工具等分类
+ */
 export const categories: Category[] = [
   {
     icon: '🔥',

@@ -331,10 +331,47 @@ export const categories: Category[] = [
     description: '效率提升相关工具',
     websites: [
       {
+        name: 'Markdown转公众号',
+        description: '将 markdown 转换为微信公众号文章',
+        url: 'https://md.openwrite.cn',
+        logo: 'https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/gh/doocs/md/images/favicon.png'
+      },
+      {
         name: 'Notion',
         description: '一体化工作空间',
         url: 'https://www.notion.so',
         logo: 'https://www.notion.com/front-static/favicon.ico'
+      }
+    ]
+  },
+   {
+    icon: '✍️',
+    name: '内容创作',
+    description: '内容创作相关网站',
+    websites: [
+      {
+        name: '公众号',
+        description: '秋云的微信公众号后台',
+        url: 'https://mp.weixin.qq.com/cgi-bin/home',
+        logo: 'https://res.wx.qq.com/a/fed_upload/9300e7ac-cec5-4454-b75c-f92260dd5b47/logo-mp.ico'
+      },
+       {
+        name: '掘金',
+        description: '掘金创作者中心',
+        url: 'https://juejin.cn/creator/home',
+        logo: 'https://lf-web-assets.juejin.cn/obj/juejin-web/xitu_juejin_web/6c61ae65d1c41ae8221a670fa32d05aa.svg'
+      },
+      {
+        name: 'CSDN',
+        description: 'CSDN 创作者中心',
+        url: 'https://mp.csdn.net',
+        logo: 'https://g.csdnimg.cn/static/logo/favicon32.ico'
+      },
+      {
+        name: '知乎',
+        description: '知乎创作者中心',
+        url: 'https://www.zhihu.com/creator',
+        logo: 'https://static.zhihu.com/heifetz/favicon.ico'
       }
     ]
   }

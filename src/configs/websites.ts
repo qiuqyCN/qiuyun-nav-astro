@@ -3,9 +3,13 @@
  * 定义单个网站的基本信息
  */
 export interface Website {
+  // 网站名称
   name: string;
+  // 网站描述
   description: string;
+  // 网站URL
   url: string;
+  // 网站logo
   logo?: string;
 }
 
@@ -14,9 +18,13 @@ export interface Website {
  * 定义网站分类的基本信息
  */
 export interface Category {
+  // 分类图标
   icon: string;
+  // 分类名称
   name: string;
+  // 分类描述
   description?: string;
+  // 分类下的网站列表
   websites?: Website[];
 }
 

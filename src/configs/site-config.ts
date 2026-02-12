@@ -1,15 +1,27 @@
 export interface SiteConfig {
+  // 网站名称
   name: string;
+  // 网站logo
   logo: string;
+  // 网站描述
   description: string;
+  // 网站关键词
   keywords: string;
-  icp: string;
-  icpUrl: string;
+  // 网站ICP备案号
+  icp?: string;
+  // 网站ICP备案链接  
+  icpUrl?: string;
+  // 百度统计ID，用于分析网站流量，没有可以不配置
+  baiduAnalytics?: {
+    id?: string;
+  };
+  // 网站作者信息
   author: {
     name: string;
     email: string;
     website?: string;
   };
+  // 网站联系信息
   contact: {
     email: string;
     wechat: {
@@ -29,6 +41,9 @@ export const siteConfig: SiteConfig = {
   keywords: '网址导航,开发工具,设计资源,编程学习',
   icp: '',
   icpUrl: 'https://beian.miit.gov.cn',
+  baiduAnalytics: {
+    id: 'd9e47659655316432bae96955a189b4b'
+  },
   author: {
     name: '秋云',
     email: '97208294@qq.com',

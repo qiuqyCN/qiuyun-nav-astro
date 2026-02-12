@@ -41,5 +41,17 @@ const finalCurrentPath = currentPath || Astro.url.pathname;
       </article>
     </main>
     <Footer client:load />
+
+    {siteConfig.baiduAnalytics?.id && (
+      <script is:inline define:vars={{ siteId: siteConfig.baiduAnalytics.id }}>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = `https://hm.baidu.com/hm.js?${siteId}`;
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+        })();
+      </script>
+    )}
   </body>
 </html>

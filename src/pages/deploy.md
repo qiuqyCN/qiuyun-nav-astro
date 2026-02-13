@@ -7,7 +7,7 @@ currentPath: /deploy
 
 # 部署到 Netlify
 
-本教程将指导你如何将秋云导航项目部署到 Netlify，这是一个免费的静态网站托管平台。这样可以节省服务器成本，并且也支持自定义域名。
+本教程将指导你如何将秋云导航项目部署到 Netlify，这是一个免费的静态网站托管平台。这样不用购买服务器，并且也支持自定义域名。
 
 部署后的网站预览：
 1. Netlify 默认分配的域名：[qiuyun-nav-astro.netlify.app](https://qiuyun-nav-astro.netlify.app/)

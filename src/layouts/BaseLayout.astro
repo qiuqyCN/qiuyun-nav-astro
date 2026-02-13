@@ -29,6 +29,11 @@ const finalCurrentPath = currentPath || Astro.url.pathname;
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
     <meta name="keywords" content={keywords} />
+
+    {siteConfig.baiduSiteVerification && (
+      <meta name="baidu-site-verification" content={siteConfig.baiduSiteVerification} />
+    )}
+
     <title>{title}</title>
     <link rel="sitemap" href="/sitemap-index.xml" />
 

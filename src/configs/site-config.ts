@@ -13,6 +13,8 @@ export interface SiteConfig {
   icp?: string;
   // 网站ICP备案链接  
   icpUrl?: string;
+  // 百度站点验证码，用于验证网站所有权，没有可以不配置
+  baiduSiteVerification?: string;
   // 百度统计ID，用于分析网站流量，没有可以不配置
   baiduAnalytics?: {
     id?: string;
@@ -52,6 +54,7 @@ export const siteConfig: SiteConfig = {
   keywords: '网址导航,开发工具,设计资源,编程学习',
   icp: '',
   icpUrl: 'https://beian.miit.gov.cn',
+  baiduSiteVerification: 'codeva-fSwenMQ9XA',
   baiduAnalytics: {
     id: 'd9e47659655316432bae96955a189b4b'
   },

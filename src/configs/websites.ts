@@ -456,8 +456,7 @@ export const categories: Category[] = [
       {
         name: "百度资源平台",
         description: "站点信息提供网站基础数据概览，搜索数据一目了然，便于网站维护、网站优化。",
-        url: "https://ziyuan.baidu.com/dashboard/index",
-        logo: "https://ziyuan.baidu.com/web5/image/logo.png?__v=@version@",
+        url: "https://ziyuan.baidu.com/dashboard/index"
       },
       {
         name: "Bing Webmaster Tools",

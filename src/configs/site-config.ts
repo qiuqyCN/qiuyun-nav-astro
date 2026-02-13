@@ -17,6 +17,10 @@ export interface SiteConfig {
   baiduAnalytics?: {
     id?: string;
   };
+  // 谷歌统计ID，用于分析网站流量，没有可以不配置
+  googleAnalytics?: {
+    id?: string;
+  };
   // 网站作者信息
   author: {
     name: string;
@@ -46,6 +50,9 @@ export const siteConfig: SiteConfig = {
   icpUrl: 'https://beian.miit.gov.cn',
   baiduAnalytics: {
     id: 'd9e47659655316432bae96955a189b4b'
+  },
+  googleAnalytics: {
+    id: 'G-DVEGQKD5C8'
   },
   author: {
     name: '秋云',

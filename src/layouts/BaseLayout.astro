@@ -31,6 +31,18 @@ const finalCurrentPath = currentPath || Astro.url.pathname;
     <meta name="keywords" content={keywords} />
     <title>{title}</title>
     <link rel="sitemap" href="/sitemap-index.xml" />
+
+    {siteConfig.googleAnalytics?.id && (
+      <>
+        <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${siteConfig.googleAnalytics.id}`}></script>
+        <script is:inline define:vars={{ gaId: siteConfig.googleAnalytics.id }}>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', gaId);
+        </script>
+      </>
+    )}
   </head>
 
   <body class="min-h-screen bg-background text-foreground">

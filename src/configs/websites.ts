@@ -323,6 +323,16 @@ export const categories: Category[] = [
         description: "腾讯云计算平台",
         url: "https://cloud.tencent.com",
       },
+      {
+        name: "Cloudflare",
+        description: "全球领先的云服务提供商",
+        url: "https://www.cloudflare.com/zh-cn/"
+      },
+      {
+        name: "Namesilo",
+        description: "域名注册和管理平台",
+        url: "https://www.namesilo.com/"
+      },
     ],
   },
   {
@@ -429,6 +439,37 @@ export const categories: Category[] = [
         description: "将 markdown 转换为微信公众号文章",
         url: "https://md.openwrite.cn",
         logo: "https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/gh/doocs/md/images/favicon.png",
+      },
+    ],
+  },
+  {
+    icon: "✍️",
+    name: "站长工具",
+    description: "站长工具相关网站",
+    websites: [
+      {
+        name: "百度统计",
+        description: "百度统计分析工具",
+        url: "https://tongji.baidu.com/",
+        logo: "https://tongji.baidu.com/web5/image/logo.png?__v=@version@",
+      },
+      {
+        name: "百度资源平台",
+        description: "站点信息提供网站基础数据概览，搜索数据一目了然，便于网站维护、网站优化。",
+        url: "https://ziyuan.baidu.com/dashboard/index",
+        logo: "https://ziyuan.baidu.com/web5/image/logo.png?__v=@version@",
+      },
+      {
+        name: "Bing Webmaster Tools",
+        description: "Bing 站长工具",
+        url: "https://www.bing.com/webmasters/about?setlang=zh-cn",
+        logo: "https://www.bing.com/sa/simg/favicon-2x.ico",
+      },
+      {
+        name: "Google Search Console",
+        description: "Google 搜索控制台",
+        url: "https://search.google.com/search-console/welcome",
+        logo: "https://www.gstatic.com/search-console/scfe/favicon.png",
       },
     ],
   },

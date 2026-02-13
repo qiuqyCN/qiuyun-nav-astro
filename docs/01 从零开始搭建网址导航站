@@ -50,3 +50,18 @@ module.exports = {
   ],
 }
 ```
+
+7. 安装 @astrojs/sitemap
+`npm install @astrojs/sitemap`
+
+8. 配置 @astrojs/sitemap
+在 `astro.config.mjs` 中添加以下配置：
+```javascript
+import { defineConfig } from 'astro/config';
+import sitemap from '@astrojs/sitemap';
+
+export default defineConfig({
+  // ...
+  integrations: [sitemap()],
+});
+```

@@ -3,6 +3,8 @@ export interface SiteConfig {
   name: string;
   // 网站logo
   logo: string;
+  // 网站网址
+  site: string;
   // 网站描述
   description: string;
   // 网站关键词
@@ -37,6 +39,7 @@ export interface SiteConfig {
 export const siteConfig: SiteConfig = {
   name: '秋云导航',
   logo: '/logo.svg',
+  site: 'https://nav.qiuyun.dev',
   description: '精心整理的优质网址导航，为开发者和设计师提供便捷的资源访问渠道',
   keywords: '网址导航,开发工具,设计资源,编程学习',
   icp: '',

@@ -71,6 +71,12 @@ export const categories: Category[] = [
         logo: "https://astro.build/favicon.svg",
       },
       {
+        name: "Starlight",
+        description: "基于 Astro 的文档网站生成器",
+        url: "https://starlight.astro.build/zh-cn/",
+        logo: "https://starlight.astro.build/favicon.svg",
+      },
+      {
         name: "TailwindCSS",
         description: "实用优先的CSS框架",
         url: "https://tailwindcss.com",
@@ -351,6 +357,11 @@ export const categories: Category[] = [
         description: "域名注册和管理平台",
         url: "https://www.namesilo.com/",
       },
+      {
+        name: "Netlify",
+        description: "静态网站托管平台",
+        url: "https://app.netlify.com/",
+      },
     ],
   },
   {
@@ -512,6 +523,19 @@ export const categories: Category[] = [
         description: "Google 搜索控制台",
         url: "https://search.google.com/search-console/welcome",
         logo: "https://www.gstatic.com/search-console/scfe/favicon.png",
+      },
+    ],
+  },
+  {
+    icon: "👨‍💻",
+    name: "个人作品集",
+    description: "个人作品集相关网站",
+    websites: [
+      {
+        name: "秋云导航",
+        description: "精心整理的优质网址导航，为开发者和设计师提供便捷的资源访问渠道",
+        url: "https://nav.qiuyun.dev",
+        logo: "https://nav.qiuyun.dev/logo.svg",
       },
     ],
   },

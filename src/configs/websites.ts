@@ -85,6 +85,7 @@ export const categories: Category[] = [
         name: "TailwindCSS Playground",
         description: "在线 TailwindCSS 实验环境",
         url: "https://play.tailwindcss.com/",
+        logo: "https://play.tailwindcss.com/favicons/favicon-32x32.png?v=3",
       },
       {
         name: "shadcn-vue",
@@ -182,7 +183,24 @@ export const categories: Category[] = [
     icon: "📱",
     name: "移动开发",
     description: "移动端开发相关资源",
-    websites: [],
+    websites: [
+      {
+        name: "React Native",
+        description: "用于构建移动端应用的框架",
+        url: "https://reactnative.dev",
+      },
+      {
+        name: "Flutter",
+        description: "Google推出的跨平台移动应用开发框架",
+        url: "https://storage.googleapis.com/cms-storage-bucket/favicon.4fd0db61df0567c0f352.png",
+      },
+      {
+        name: "UniApp",
+        description: "基于Vue.js的跨平台移动应用开发框架",
+        url: "https://uniapp.dcloud.net.cn",
+        logo: "https://qiniu-web-assets.dcloud.net.cn/unidoc/zh/icon.png?v=1556263038788",
+      },
+    ],
   },
   {
     icon: "🔧",
@@ -364,7 +382,18 @@ export const categories: Category[] = [
     icon: "🎬",
     name: "多媒体",
     description: "多媒体相关资源",
-    websites: [],
+    websites: [
+      {
+        name: "YouTube",
+        description: "视频分享平台",
+        url: "https://www.youtube.com",
+      },
+      {
+        name: "Bilibili",
+        description: "视频分享平台",
+        url: "https://www.bilibili.com",
+      },
+    ],
   },
   {
     icon: "💼",

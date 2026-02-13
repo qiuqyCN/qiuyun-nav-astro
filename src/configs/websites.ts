@@ -326,12 +326,12 @@ export const categories: Category[] = [
       {
         name: "Cloudflare",
         description: "全球领先的云服务提供商",
-        url: "https://www.cloudflare.com/zh-cn/"
+        url: "https://www.cloudflare.com/zh-cn/",
       },
       {
         name: "Namesilo",
         description: "域名注册和管理平台",
-        url: "https://www.namesilo.com/"
+        url: "https://www.namesilo.com/",
       },
     ],
   },
@@ -384,18 +384,19 @@ export const categories: Category[] = [
       },
       {
         name: "即时工具",
-        description: "拥有视频工具、音频工具、图片工具、 PDF工具、办公辅助、设计工具、文本工具、数字工具、加密工具、单位转换等等工具。",
-        url: "https://www.67tool.com/"
+        description:
+          "拥有视频工具、音频工具、图片工具、 PDF工具、办公辅助、设计工具、文本工具、数字工具、加密工具、单位转换等等工具。",
+        url: "https://www.67tool.com/",
       },
       {
         name: "即刻工具",
         description: "一个便捷的在线工具网站",
-        url: "https://tools.jikec.com/"
+        url: "https://tools.jikec.com/",
       },
       {
         name: "转换工具",
         description: "文件格式转换工具",
-        url: "https://convertio.co/zh/"
+        url: "https://convertio.co/zh/",
       },
       {
         name: "Notion",
@@ -443,7 +444,7 @@ export const categories: Category[] = [
     ],
   },
   {
-    icon: "✍️",
+    icon: "🌐",
     name: "站长工具",
     description: "站长工具相关网站",
     websites: [
@@ -454,9 +455,22 @@ export const categories: Category[] = [
         logo: "https://tongji.baidu.com/web5/image/logo.png?__v=@version@",
       },
       {
+        name: "Microsoft Clarity",
+        description: "Microsoft Clarity 分析工具",
+        url: "https://clarity.microsoft.com/",
+        logo: "https://claritystatic.azureedge.net/images/logo.ico",
+      },
+      {
+        name: "Google Analytics",
+        description: "Google 分析工具",
+        url: "https://analytics.google.com/analytics/web/",
+        logo: "https://ssl.gstatic.com/analytics/analytics-frontend.indexpage_20260211.12_p0/index/static/analytics_standard_icon.png",
+      },
+      {
         name: "百度资源平台",
-        description: "站点信息提供网站基础数据概览，搜索数据一目了然，便于网站维护、网站优化。",
-        url: "https://ziyuan.baidu.com/dashboard/index"
+        description:
+          "站点信息提供网站基础数据概览，搜索数据一目了然，便于网站维护、网站优化。",
+        url: "https://ziyuan.baidu.com/dashboard/index",
       },
       {
         name: "Bing Webmaster Tools",

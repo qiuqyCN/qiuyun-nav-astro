@@ -21,6 +21,10 @@ export interface SiteConfig {
   googleAnalytics?: {
     id?: string;
   };
+  // 微软Clarity统计ID，用于分析用户行为，没有可以不配置
+  clarity?: {
+    id?: string;
+  };
   // 网站作者信息
   author: {
     name: string;
@@ -53,6 +57,9 @@ export const siteConfig: SiteConfig = {
   },
   googleAnalytics: {
     id: 'G-DVEGQKD5C8'
+  },
+  clarity: {
+    id: 'vgjitzzwba'
   },
   author: {
     name: '秋云',

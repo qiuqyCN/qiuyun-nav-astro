@@ -111,6 +111,18 @@ export const categories: Category[] = [
         logo: "https://lucide.dev/logo.dark.svg",
       },
       {
+        name: "SVG Repo",
+        description: "免费的 SVG 图标库",
+        url: "https://www.svgrepo.com/",
+        logo: "https://www.svgrepo.com/logo.svg",
+      },
+      {
+        name: "Free SVG Download",
+        description: "免费的 SVG 图标库",
+        url: "https://www.freesvgdownload.com/",
+        logo: "https://www.freesvgdownload.com/wp-content/uploads/2021/05/Varlik-26-300x300.png",
+      },
+      {
         name: "UIverse",
         description: "在 Uiverse 上，您可以发现一系列开源且可定制的组件，适用于网页和移动应用。您可以浏览丰富的按钮、卡片、加载器、输入框等元素，以优化您的应用程序的用户界面，并提升您的设计体验",
         url: "https://uiverse.io/elements",

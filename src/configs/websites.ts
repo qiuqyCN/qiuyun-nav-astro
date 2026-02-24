@@ -111,6 +111,11 @@ export const categories: Category[] = [
         logo: "https://lucide.dev/logo.dark.svg",
       },
       {
+        name: "Simple Icons",
+        description: "流行品牌的 SVG 图标",
+        url: "https://simpleicons.org/",
+      },
+      {
         name: "SVG Repo",
         description: "免费的 SVG 图标库",
         url: "https://www.svgrepo.com/",

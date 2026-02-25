@@ -562,9 +562,15 @@ export const categories: Category[] = [
       },
       {
         name: "秋云文档",
-        description: "秋云的文档网站",
+        description: "记录、沉淀、分享 · 全栈开发者的技术笔记",
         url: "https://docs.qiuyun.dev",
-        logo: "https://docs.qiuyun.dev/logo.svg",
+        logo: "https://docs.qiuyun.dev/favicon.svg",
+      },
+      {
+        name: "秋云工具",
+        description: "秋云的文档网站",
+        url: "https://tool.qiuyun.dev",
+        logo: "https://tool.qiuyun.dev/favicon.svg",
       },
     ],
   },

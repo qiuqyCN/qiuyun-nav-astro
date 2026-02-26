@@ -19,6 +19,8 @@ const {
 } = Astro.props;
 
 const finalCurrentPath = currentPath || Astro.url.pathname;
+
+Astro.response.headers.set('Cache-Control', 'public, max-age=60, must-revalidate');
 ---
 
 <html lang="zh-CN">

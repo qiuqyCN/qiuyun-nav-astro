@@ -3,8 +3,6 @@ layout: ../layouts/MarkdownPostLayout.astro
 title: 关于我们 - 秋云导航
 description: 了解更多关于秋云导航的信息
 currentPath: /about
-
-Astro.response.headers.set('CDN-Cache-Control', 'public, max-age=60, must-revalidate');
 ---
 
 # 关于我们

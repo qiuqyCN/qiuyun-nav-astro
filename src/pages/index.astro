@@ -4,8 +4,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import HomePage from '../components/HomePage.vue';
 
 const currentPath = '/';
-
-Astro.response.headers.set('CDN-Cache-Control', 'public, max-age=60, must-revalidate');
 ---
 
 <BaseLayout currentPath={currentPath}>

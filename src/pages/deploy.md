@@ -3,6 +3,8 @@ layout: ../layouts/MarkdownPostLayout.astro
 title: 部署到 Netlify
 description: 将秋云导航部署到 Netlify 的完整教程
 currentPath: /deploy
+
+Astro.response.headers.set('CDN-Cache-Control', 'public, max-age=60, must-revalidate');
 ---
 
 # 部署到 Netlify

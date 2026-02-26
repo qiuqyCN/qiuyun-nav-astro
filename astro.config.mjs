@@ -4,6 +4,7 @@ import { defineConfig } from 'astro/config';
 import vue from '@astrojs/vue';
 import sitemap from '@astrojs/sitemap';
 import { siteConfig } from './src/configs/site-config';
+import netlify from '@astrojs/netlify';
 
 // https://astro.build/config
 export default defineConfig({
@@ -12,4 +13,7 @@ export default defineConfig({
     },
   site: siteConfig.site,
   integrations: [vue(), sitemap()],
+  adapter: netlify({
+    cacheOnDemandPages: true,
+  }),
 });

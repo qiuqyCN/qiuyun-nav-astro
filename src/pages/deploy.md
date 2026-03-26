@@ -1,11 +1,39 @@
 ---
 layout: ../layouts/MarkdownPostLayout.astro
 title: 部署到 Netlify
-description: 将秋云导航部署到 Netlify 的完整教程
+description: 将秋云导航部署到服务器的完整教程
 currentPath: /deploy
 ---
 
-# 部署到 Netlify
+
+提供两种部署方式：通过宝塔面板静态部署到Linux服务器（适合纯静态站点）和通过 Netlify 部署。以下是详细步骤：
+
+## 方式一 静态部署到Linux服务器
+
+适合 output: 'static' 的 Astro 项目。
+
+### 1. 本地构建项目
+```bash
+npm run build
+```
+
+###2. 宝塔部署
+
+1. 登录宝塔面板 → 网站 → 添加站点 
+![添加站点](https://nav.qiuyun.dev/deploy/10.png)
+
+2. 填写域名（或 IP），选择 HTML 项目（纯静态）
+
+3. 上传 dist 文件夹内容到网站根目录（/www/wwwroot/your-domain），注意将your-domain替换为你自己的域名。
+
+4. 申请 SSL 证书（可选），直接在宝塔面板申请即可，申请 Let's Encrypt 证书，这个免费，但是注意有效期为 90 天。需要定期续期。
+![申请 SSL 证书](https://nav.qiuyun.dev/deploy/11.png)
+
+5. 访问网站 
+通过 your-domain 访问网站。
+
+
+## 方式二 部署到 Netlify
 
 本教程将指导你如何将秋云导航项目部署到 Netlify，这是一个免费的静态网站托管平台。这样不用购买服务器，并且也支持自定义域名。
 

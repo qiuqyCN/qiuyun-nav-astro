@@ -30,9 +30,15 @@ export interface Category {
 
 /**
  * 网站分类配置
- * 包含前端开发、后端开发、UI/UX设计、移动开发、开发工具、学习资源、游戏开发、人工智能、云服务、安全、数据分析、多媒体、效率工具等分类
+ * 包含全部网址、前端开发、后端开发、UI/UX设计、移动开发、开发工具、学习资源、游戏开发、人工智能、云服务、安全、数据分析、多媒体、效率工具等分类
  */
 export const categories: Category[] = [
+  {
+    icon: "📑",
+    name: "全部网址",
+    description: "所有分类的网址汇总",
+    websites: []
+  },
   {
     icon: "🔥",
     name: "前端开发",
@@ -206,6 +212,12 @@ export const categories: Category[] = [
         url: "https://dribbble.com",
         logo: "https://cdn.dribbble.com/assets/favicon-99944ff731bb44d3a947810ca8728f177f8deac035a3a4342120c385fd7acb9d.svg",
       },
+      {
+        name: "DiceBear",
+        description: "生成随机头像的服务",
+        url: "https://www.dicebear.com/"
+      },
+
     ],
   },
   {

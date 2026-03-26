@@ -9,6 +9,16 @@ interface Props {
 const props = defineProps<Props>();
 
 const filteredWebsites = computed(() => {
+  // 当索引为 0 时，显示所有分类的网址
+  if (props.categoryIndex === 0) {
+    const allWebsites: Website[] = [];
+    categories.slice(1).forEach(category => {
+      if (category.websites) {
+        allWebsites.push(...category.websites);
+      }
+    });
+    return allWebsites;
+  }
   const category = categories[props.categoryIndex];
   return category?.websites || [];
 });

@@ -134,6 +134,12 @@ export const categories: Category[] = [
         logo: "https://www.freesvgdownload.com/wp-content/uploads/2021/05/Varlik-26-300x300.png",
       },
       {
+        name: "iconfont",
+        description: "阿里妈妈矢量图标库",
+        url: "https://www.iconfont.cn/",
+        logo: "https://img.alicdn.com/imgextra/i4/O1CN01Z5paLz1O0zuCC7osS_!!6000000001644-55-tps-83-82.svg",
+      },
+      {
         name: "UIverse",
         description: "在 Uiverse 上，您可以发现一系列开源且可定制的组件，适用于网页和移动应用。您可以浏览丰富的按钮、卡片、加载器、输入框等元素，以优化您的应用程序的用户界面，并提升您的设计体验",
         url: "https://uiverse.io/elements",

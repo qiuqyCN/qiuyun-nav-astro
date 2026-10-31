@@ -274,6 +274,11 @@ export const categories: Category[] = [
         description: "专业的开发工具提供商",
         url: "https://www.jetbrains.com",
       },
+      {
+        name: "agent-qa",
+        description: "AI 应用测试，支持 CLI / MCP、memidex 持久记忆、经验证的自我改进及可审查证据",
+        url: "https://vostride.com",
+      },
     ],
   },
   {

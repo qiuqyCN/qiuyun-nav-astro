@@ -275,6 +275,11 @@ export const categories: Category[] = [
         url: "https://www.jetbrains.com",
       },
       {
+        name: "agent-qa",
+        description: "AI 应用测试，支持 CLI / MCP、memidex 持久记忆、经验证的自我改进及可审查证据",
+        url: "https://vostride.com",
+      },
+      {
         name: "Greasy Fork",
         description: "油猴脚本（Tampermonkey）脚本仓库，海量用户脚本可直接安装使用",
         url: "https://greasyfork.org/zh-CN",

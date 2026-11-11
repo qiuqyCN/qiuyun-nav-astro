@@ -274,6 +274,12 @@ export const categories: Category[] = [
         description: "专业的开发工具提供商",
         url: "https://www.jetbrains.com",
       },
+      {
+        name: "Greasy Fork",
+        description: "油猴脚本（Tampermonkey）脚本仓库，海量用户脚本可直接安装使用",
+        url: "https://greasyfork.org/zh-CN",
+        logo: "https://greasyfork.org/images/blacklogo96.png",
+      },
     ],
   },
   {
@@ -565,6 +571,12 @@ export const categories: Category[] = [
         url: "https://search.google.com/search-console/welcome",
         logo: "https://www.gstatic.com/search-console/scfe/favicon.png",
       },
+      {
+        name: "Google AdSense",
+        description: "Google 广告变现平台，为网站投放广告并获取收益",
+        url: "https://www.google.com/adsense/",
+        logo: "https://www.google.com/favicon.ico",
+      },
     ],
   },
   {
@@ -586,9 +598,15 @@ export const categories: Category[] = [
       },
       {
         name: "秋云工具",
-        description: "秋云的文档网站",
-        url: "https://tool.qiuyun.dev",
-        logo: "https://tool.qiuyun.dev/favicon.svg",
+        description: "免费在线开发者工具箱，60+ 纯前端工具，数据不上传更安全",
+        url: "https://tools.qiuyun.dev",
+        logo: "https://tools.qiuyun.dev/favicon.png",
+      },
+      {
+        name: "秋云 M3U8 下载器",
+        description: "免费开源的 M3U8 视频在线下载工具，配合油猴脚本自动嗅探，支持多线程分片下载与 MP4 转换",
+        url: "https://m3u8.qiuyun.dev",
+        logo: "https://m3u8.qiuyun.dev/favicon.png",
       },
     ],
   },

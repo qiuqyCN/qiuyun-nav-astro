@@ -451,6 +451,12 @@ export const categories: Category[] = [
         description: "视频分享平台",
         url: "https://www.bilibili.com",
       },
+      {
+        name: "StagePeek",
+        description: "全球 201 座演唱会场馆 2D 座位图与 3D 舞台视角模拟器，免登录体验 1x–10x 变焦视野",
+        url: "https://stagepeek.live/zh-CN/",
+        logo: "https://stagepeek.live/icon.png",
+      },
     ],
   },
   {
